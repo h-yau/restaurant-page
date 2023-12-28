@@ -1,8 +1,17 @@
-function test() {
-    const element = document.createElement('div');
-    element.textContent = "I'm here!";
+function addNavContainer() {
+    const navContainer = document.createElement('header');
+    navContainer.classList.add('nav-container');
+    
+    const sideNav = document.createElement('div');
+    sideNav.classList.add('side-nav');
 
-    return element;
+    navContainer.appendChild(sideNav);
+
+    
+
+
+
+    return navContainer;
 }
 
-document.getElementById('content').appendChild(test());
+document.getElementById('content').appendChild(addNavContainer());
