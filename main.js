@@ -1,1 +1,1 @@
-document.getElementById("content").appendChild(function(){const e=document.createElement("div");return e.textContent="I'm here!",e}());
+document.getElementById("content").appendChild(function(){const e=document.createElement("header");e.classList.add("nav-container");const n=document.createElement("div");return n.classList.add("side-nav"),e.appendChild(n),e}());
