@@ -18,6 +18,23 @@ function addNavContainer() {
 
     logo.appendChild(logoText);
 
+    const siteLocation = document.createElement('div');
+    siteLocation.classList.add('site-location');
+
+    sideNav.appendChild(siteLocation);
+
+    const googleMapLink = document.createElement('a');
+    googleMapLink.href = "https://maps.app.goo.gl/GD9BNZ7fBhJxeE9u6";
+
+    sideNav.appendChild(googleMapLink);
+
+    const address = ['111 Fake St,', 'San Francisco, CA 12345'];
+
+    for (let i = 0; i < address.length; i++) {
+        const p = document.createElement('p');
+        p.textContent = address[i];
+        googleMapLink.appendChild(p);
+    }
     
 
 
