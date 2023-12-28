@@ -5,4 +5,4 @@ function test() {
     return element;
 }
 
-document.body.appendChild(test());
+document.getElementById('content').appendChild(test());
