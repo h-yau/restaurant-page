@@ -1,1 +1,1 @@
-console.log("I'm here!");
+document.body.appendChild(function(){const e=document.createElement("div");return e.textContent="I'm here!",e}());
