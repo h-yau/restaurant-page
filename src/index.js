@@ -7,6 +7,17 @@ function addNavContainer() {
 
     navContainer.appendChild(sideNav);
 
+    const logo = document.createElement('a');
+    logo.classList.add('logo');
+    
+    sideNav.appendChild(logo);
+
+    const logoText = document.createElement('p');
+    logoText.textContent = 'Ramen House';
+    logoText.classList.add('logo-text');
+
+    logo.appendChild(logoText);
+
     
 
 
