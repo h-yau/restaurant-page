@@ -1,3 +1,5 @@
+import ramen1 from './ramen1.jpg';
+
 function addNavContainer() {
     const navContainer = document.createElement('header');
     navContainer.classList.add('nav-container');
@@ -52,7 +54,24 @@ function addNavContainer() {
     }
 
 
+    //testing images
+    const ramen = document.createElement('img');
+    ramen.src = ramen1;
+    navContainer.appendChild(ramen);
+
     return navContainer;
 }
+
+// function importAll(r) {
+//     let images = {};
+//     r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+//     return images;
+// }
+
+// const images = importAll(require.context('./', false, /\.(png|jpe?g|svg)$/));
+
+
+
+
 
 document.getElementById('content').appendChild(addNavContainer());
