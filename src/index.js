@@ -36,7 +36,20 @@ function addNavContainer() {
         googleMapLink.appendChild(p);
     }
     
+    const subSideNav = document.createElement('ul');
+    subSideNav.classList.add('sub-side-nav');
+    
+    sideNav.appendChild(subSideNav);
 
+    const listItems = ['RESERVE', 'MENU', 'OUR STORY', 'HOURS & LOCATION', 'JOIN OUR TEAM'];
+
+    for (let i = 0; i < listItems.length; i++) {
+        const li = document.createElement('li');
+        li.classList.add(listItems[i].replaceAll(' ', '-').toLowerCase());
+        li.textContent = listItems[i];
+
+        subSideNav.appendChild(li);
+    }
 
 
     return navContainer;
