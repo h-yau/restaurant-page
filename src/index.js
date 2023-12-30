@@ -75,3 +75,4 @@ function addNavContainer() {
 
 
 document.getElementById('content').appendChild(addNavContainer());
+console.log('hello');
