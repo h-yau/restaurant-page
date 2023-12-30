@@ -1,4 +1,4 @@
-import ramen1 from './ramen1.jpg';
+// import ramen1 from './ramen1.jpg';
 
 function addNavContainer() {
     const navContainer = document.createElement('header');
@@ -55,24 +55,43 @@ function addNavContainer() {
 
 
     //testing images
-    const ramen = document.createElement('img');
-    ramen.src = ramen1;
-    navContainer.appendChild(ramen);
+    // const ramen = document.createElement('img');
+    // ramen.src = ramen1;
+    // navContainer.appendChild(ramen);
 
     return navContainer;
 }
 
-// function importAll(r) {
-//     let images = {};
-//     r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-//     return images;
-// }
+function addMain() {
 
-// const images = importAll(require.context('./', false, /\.(png|jpe?g|svg)$/));
+    const main = document.createElement('main');
+    main.classList.add('main');
 
+    function importAllImages(r) {
+        let images = {};
+        r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+        return images;
+    }
+    
+    const images = importAllImages(require.context('./', false, /\.(png|jpe?g|svg)$/));
+    
+    Object.entries(images).forEach(([name, path]) => {
+
+        const photoDiv = document.createElement('div');
+
+        const photo = document.createElement('img');
+        photo.classList.add(name);
+        photo.src = path;
+
+        photoDiv.appendChild(photo);
+        main.appendChild(photoDiv);
+    });
+
+    return main;
+}
 
 
 
 
 document.getElementById('content').appendChild(addNavContainer());
-console.log('hello');
+document.getElementById('content').appendChild(addMain());
