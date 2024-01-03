@@ -10,6 +10,7 @@ function addNavContainer() {
     navContainer.appendChild(sideNav);
 
     const logo = document.createElement('a');
+    logo.href = "/";
     logo.classList.add('logo');
     
     sideNav.appendChild(logo);
@@ -38,7 +39,7 @@ function addNavContainer() {
         googleMapLink.appendChild(p);
     }
     
-    const subSideNav = document.createElement('ul');
+    const subSideNav = document.createElement('div');
     subSideNav.classList.add('sub-side-nav');
     
     sideNav.appendChild(subSideNav);
@@ -46,11 +47,11 @@ function addNavContainer() {
     const listItems = ['RESERVE', 'MENU', 'OUR STORY', 'HOURS & LOCATION', 'JOIN OUR TEAM'];
 
     for (let i = 0; i < listItems.length; i++) {
-        const li = document.createElement('li');
-        li.classList.add(listItems[i].replaceAll(' ', '-').toLowerCase());
-        li.textContent = listItems[i];
+        const button = document.createElement('button');
+        button.classList.add(listItems[i].replaceAll(' ', '-').toLowerCase());
+        button.textContent = listItems[i];
 
-        subSideNav.appendChild(li);
+        subSideNav.appendChild(button);
     }
 
     return navContainer;
