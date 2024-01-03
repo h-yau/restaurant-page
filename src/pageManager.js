@@ -1,9 +1,11 @@
 import prepareNav from './nav.js';
-import prepareHome from './home.js'
+import prepareMain from './main.js'
+import prepareStory from './ourStory.js'
 
 export default function loadPage() {
     prepareNav();
     if (true) {
-        prepareHome();
+        prepareStory();
+        // prepareMain();
     }
 }
