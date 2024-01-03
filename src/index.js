@@ -28,7 +28,7 @@ function addNavContainer() {
     const googleMapLink = document.createElement('a');
     googleMapLink.href = "https://maps.app.goo.gl/GD9BNZ7fBhJxeE9u6";
 
-    sideNav.appendChild(googleMapLink);
+    siteLocation.appendChild(googleMapLink);
 
     const address = ['111 Fake St,', 'San Francisco, CA 12345'];
 
