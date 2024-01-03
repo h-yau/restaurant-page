@@ -1,4 +1,4 @@
-// import ramen1 from './ramen1.jpg';
+import './styles.css';
 
 function addNavContainer() {
     const navContainer = document.createElement('header');
@@ -53,12 +53,6 @@ function addNavContainer() {
         subSideNav.appendChild(li);
     }
 
-
-    //testing images
-    // const ramen = document.createElement('img');
-    // ramen.src = ramen1;
-    // navContainer.appendChild(ramen);
-
     return navContainer;
 }
 
@@ -95,3 +89,4 @@ function addMain() {
 
 document.getElementById('content').appendChild(addNavContainer());
 document.getElementById('content').appendChild(addMain());
+document.getElementById('content').classList.add('window');
