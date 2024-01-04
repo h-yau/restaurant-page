@@ -4,8 +4,11 @@ import prepareStory from './our-story.js'
 
 export default function loadPage() {
     prepareNav();
-    if (true) {
-        prepareStory();
-        // prepareMain();
-    }
+    const buttons = document.querySelector('.sub-side-nav').querySelectorAll('button');
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const className = button.className;
+            console.log(className);
+        })
+    })
 }
