@@ -12,6 +12,7 @@ const functionMap = {
 }
 
 const clearContent = () => {
+    // There is still unexpected behavior. Content showing in unexpected places
     const children = document.getElementsByClassName('window')[0].childNodes;
     if (children.length > 2) {
         children[children.length - 1].innerHTML = '';
@@ -20,7 +21,7 @@ const clearContent = () => {
 
 export default function loadPage() {
     prepareNav();
-    // prepareMain();
+    prepareMain();
     const buttons = document.querySelector('.sub-side-nav').querySelectorAll('button');
     buttons.forEach(button => {
         button.addEventListener('click', () => {
