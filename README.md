@@ -15,8 +15,8 @@ Let's break down the steps to conquer this project:
 
 ### 1. Project Setup
 
-- Start off the project just like we did in the webpack tutorial.
-- Fire up `npm init` in your project directory to cook up a fresh `package.json` file.
+- Start off the project just like instructed in the webpack tutorial.
+- Input command `npm init` in your project directory to create a fresh `package.json` file.
 - Install webpack to the `node_modules` directory with `npm install webpack webpack-cli --save-dev`.
 
 
@@ -30,16 +30,16 @@ Let's break down the steps to conquer this project:
 ### 3. Basic DOM Magic
 
 - Sketch an HTML skeleton inside `dist/index.html` with a solo `<div id="content">`.
-- Spice up `src/index.js` with a simple `console.log` or `alert` statement. Run `npx webpack`, then load up `dist/index.html` in a browser to savor the success.
+- Test `src/index.js` with a simple `console.log` or `alert` statement. Run `npx webpack`, then load up `dist/index.html` in a browser to savor the success.
 
 ### 4. Restaurant Homepage
 
 - Serve a basic homepage for a restaurant with an image, headline, and some lip-smacking copy. Go ahead and hard-code these into the HTML.
-- Don't get too attached; surgically remove these elements from the HTML. Instead, use JavaScript to dynamically create them. Pen down this initial page-load function in its own module, then import and call it in `index.js`.
+- Use JavaScript to dynamically create elements. Pen down this initial page-load function in its own module, then import and call it in `index.js`.
 
 ### 5. Tabbed Browsing
 
-- Spice things up with tabbed browsing to flex those programming muscles. Now, you can access the Contact and Menu pages with a click.
+- Employ grid and flexbox for better user interface. 
 - Wrap the contents of each tab in its own module, exporting a function to whip up and append the content.
 - Serve the tab-switching logic in `index.js`.
 
