@@ -10,7 +10,7 @@ function addNavContainer() {
     navContainer.appendChild(sideNav);
 
     const logo = document.createElement('a');
-    logo.href = "/";
+    logo.href = "./";
     logo.classList.add('logo');
     
     sideNav.appendChild(logo);
