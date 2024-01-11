@@ -1,6 +1,7 @@
 import prepareNav from './nav.js';
 import prepareMain from './main.js'
 import prepareStory from './our-story.js'
+import prepareJoin from './join-our-team.js'
 
 const functionMap = {
     'main': prepareMain,
@@ -8,7 +9,7 @@ const functionMap = {
     // 'menu': prepareMenu,
     'our-story': prepareStory,
     // 'hours-&-location': prepareHours,
-    // 'join-our-team': prepareJoin,
+    'join-our-team': prepareJoin,
 }
 
 const clearContent = () => {
@@ -30,7 +31,6 @@ export default function loadPage() {
             const className = button.className;
             if (null != functionMap[className]) {
                 const content = functionMap[className]();
-                content.classList.add(className)
                 document.querySelector('main').appendChild(content);
             }
 
