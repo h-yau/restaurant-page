@@ -24,7 +24,7 @@ export default function addReserve() {
     fieldset.append(submitButton);
 
     submitButton.addEventListener('click', () => {
-        alert('Reserved!');
+        alert('Reserved! See you soon!');
         window.location.href = './';
     });
 

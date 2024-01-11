@@ -3,13 +3,15 @@ import prepareMain from './main.js';
 import prepareStory from './our-story.js';
 import prepareJoin from './join-our-team.js';
 import prepareReserve from './reserve.js';
+import prepareMenu from './menu.js';
+import prepareHours from './hours-&-location.js';
 
 const functionMap = {
     'main': prepareMain,
     'reserve': prepareReserve,
-    // 'menu': prepareMenu,
+    'menu': prepareMenu,
     'our-story': prepareStory,
-    // 'hours-&-location': prepareHours,
+    'hours-&-location': prepareHours,
     'join-our-team': prepareJoin,
 }
 
