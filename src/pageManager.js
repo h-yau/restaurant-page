@@ -12,10 +12,11 @@ const functionMap = {
 }
 
 const clearContent = () => {
-    // There is still unexpected behavior. Content showing in unexpected places
-    const children = document.getElementsByClassName('window')[0].childNodes;
-    if (children.length > 2) {
+    const container = document.getElementsByClassName('window')[0];
+    const children = container.childNodes;
+    if (children.length > 2 && children[children.length - 1].className != 'nav-container') {
         children[children.length - 1].innerHTML = '';
+        children[children.length - 1].className = '';
     }
 }
 
@@ -27,8 +28,12 @@ export default function loadPage() {
         button.addEventListener('click', () => {
             clearContent();
             const className = button.className;
-            if (functionMap[className])
-            functionMap[className]();
+            if (null != functionMap[className]) {
+                const content = functionMap[className]();
+                content.classList.add(className)
+                document.querySelector('main').appendChild(content);
+            }
+
         });
     });
 }

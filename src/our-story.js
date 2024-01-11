@@ -1,4 +1,4 @@
-function addStory() {
+export default function addStory() {
     const paragraphs = [
 '        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error distinctio eveniet laudantium sint? Quas velit cum ut expedita magni quis quod, adipisci odit mollitia repudiandae ab ex quidem, dolorem magnam earum sit sunt facilis voluptatem vel atque excepturi rem impedit! Aliquid ullam eaque corporis labore quis et officiis, quasi veritatis repellendus obcaecati, nostrum est delectus. Quibusdam dolores laudantium tenetur, maxime minima, repudiandae animi ab a nesciunt accusantium omnis quam dolor totam, cumque provident pariatur corrupti. Provident dolores sequi eaque tempora pariatur incidunt nulla perspiciatis illum earum voluptate quis in odit et voluptas mollitia, ipsum cumque dolorum minima est cum tempore.',
 '        Consectetur delectus sit earum ea numquam maxime saepe, incidunt labore molestiae esse similique debitis nihil rerum deleniti dolor maiores excepturi ab culpa nemo exercitationem animi quae reprehenderit? Eum incidunt quae, facilis sint dignissimos voluptates blanditiis, dolorem autem soluta velit necessitatibus in consectetur, possimus error temporibus quo iusto neque. Error ipsa non unde earum quasi reiciendis corrupti. Minima incidunt commodi blanditiis possimus molestias? Quidem aut assumenda dolorem cupiditate officia error sit cumque distinctio rem, molestias minus doloremque facilis porro exercitationem excepturi nulla unde vero molestiae et quas, itaque esse alias quos magni? Earum esse autem impedit debitis dolores eum unde odio?',
@@ -16,8 +16,4 @@ function addStory() {
     }
 
     return storyContainer
-}
-
-export default function loadStory() {
-    document.getElementById('content').appendChild(addStory());
 }
