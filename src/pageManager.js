@@ -1,11 +1,12 @@
 import prepareNav from './nav.js';
-import prepareMain from './main.js'
-import prepareStory from './our-story.js'
-import prepareJoin from './join-our-team.js'
+import prepareMain from './main.js';
+import prepareStory from './our-story.js';
+import prepareJoin from './join-our-team.js';
+import prepareReserve from './reserve.js';
 
 const functionMap = {
     'main': prepareMain,
-    // 'reserve': prepareReserve,
+    'reserve': prepareReserve,
     // 'menu': prepareMenu,
     'our-story': prepareStory,
     // 'hours-&-location': prepareHours,
