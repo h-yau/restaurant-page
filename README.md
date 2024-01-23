@@ -1,7 +1,7 @@
  
 # Restaurant Page Project
 
-[Live Repo](https://nzxzn.github.io/restaurant-page/)
+[Live Repo](https://h-yau.github.io/restaurant-page/)
 
 ## Introduction
 
